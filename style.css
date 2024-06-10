@@ -14,15 +14,18 @@ body{
     transform: perspective(2500px);
     transition: 1s;
 }
-.birthdayCard:hover{
+.birthdayCard:hover,
+.birthdayCard.open{
     transform: perspective(2500px) rotate(5deg);
     box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2),
     0 10px 100px rgba(0,0,0,0.5);
 }
-.birthdayCard:hover .cardFront{
+.birthdayCard:hover .cardFront,
+.birthdayCard.open .cardFront{
     transform: rotateY(-160deg);
 }
-.birthdayCard:hover .happy {
+.birthdayCard:hover .happy,
+.birthdayCard.open .happy {
     visibility: hidden;
 }
 .cardFront {
@@ -99,16 +102,16 @@ body{
     left: 37px;
 }
 .balloon-1::after{
-    border-bottom: 10px soliod #ff3e6b;
+    border-bottom: 10px solid #ff3e6b;
 }
 .balloon-2::after{
-    border-bottom: 10px soliod #04b183;
+    border-bottom: 10px solid #04b183;
 }
 .balloon-3::after{
-    border-bottom: 10px soliod #ffc94c;
+    border-bottom: 10px solid #ffc94c;
 }
 .balloon-4::after{
-    border-bottom: 10px soliod #13a9bd;
+    border-bottom: 10px solid #13a9bd;
 }
 
 .cardInside{
@@ -139,4 +142,4 @@ p{
     margin: 30px;
     outline-color: #333;
     outline-style: dotted;
-  }
+}
